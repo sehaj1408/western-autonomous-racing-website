@@ -33,10 +33,6 @@ const NavbarButton = ({ name, hrefTag }) => {
 
   return (
     <Link to={hrefTag} className={isActive ? styles['active'] : ''}>{name}</Link>
-
-    // <a href={hrefTag} onClick={handleButtonClick} className={isActive ? styles['active'] : ''}>
-    //   {name}
-    // </a>
   )
 }
 

@@ -11,3 +11,11 @@
   --purple-medium: #6043bc;
   --purple-dark: #480089;
 }
+
+body {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image:
+    repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 100vh),
+    repeating-linear-gradient(#9d7dff6c, #a98ef7a4);
+}
