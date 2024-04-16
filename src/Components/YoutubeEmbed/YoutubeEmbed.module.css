@@ -1,9 +1,10 @@
 .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
+  height: 0;
   position: relative;
   border: 1px solid black;
-  box-shadow: 0px 2px 10px rgb(72, 72, 72)
+  box-shadow: 0px 2px 10px rgb(72, 72, 72);
 }
 
 .video-responsive iframe {
