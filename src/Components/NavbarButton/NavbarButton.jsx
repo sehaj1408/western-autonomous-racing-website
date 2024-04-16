@@ -26,11 +26,6 @@ const NavbarButton = ({ name, hrefTag }) => {
     }
   }, [location.pathname, hrefTag]);
 
-  const handleButtonClick = () => {
-    setIsActive(true);
-    localStorage.setItem('ACTIVE_NAVBAR_BUTTON', JSON.stringify(name));
-  };
-
   return (
     <Link to={hrefTag} className={isActive ? styles['active'] : ''}>{name}</Link>
   )
