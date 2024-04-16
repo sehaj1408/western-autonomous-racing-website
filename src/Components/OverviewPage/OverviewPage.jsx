@@ -1,8 +1,7 @@
 import styles from "./OverviewPage.module.css";
 import React, { Component } from 'react';
 import YoutubeEmbed from "../YoutubeEmbed/YoutubeEmbed";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Carousel } from 'react-responsive-carousel';
+import ImageCarousel from "../ImageCarousel/ImageCarousel";
 
 const OverviewPage = () => {
   return (
@@ -12,20 +11,9 @@ const OverviewPage = () => {
         <div className={styles['section-title-text']}>Gallery</div>
         <div className={styles['horizontal-line']}></div>
       </div>
-      {/* <Carousel>
-        <div>
-          <img src={require("../../Images/Website-Gallery-Images/image-1.jpg")} alt="Image 1" />
-          <p className="legend">Legend 1</p>
-        </div>
-        <div>
-          <img src="assets/2.jpeg" />
-          <p className="legend">Legend 2</p>
-        </div>
-        <div>
-          <img src="assets/3.jpeg" />
-          <p className="legend">Legend 3</p>
-        </div>
-      </Carousel> */}
+      <div className={styles['carousel']}>
+        <ImageCarousel />
+      </div>
       <div className={`${styles['section-title-text-container']} ${styles['video-text-container']}`}>
         <div className={styles['horizontal-line']}></div>
         <div className={styles['section-title-text']}>Video</div>

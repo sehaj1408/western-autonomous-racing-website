@@ -1,6 +1,9 @@
 .overview-container {
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
+  max-width: 2000px;
+  margin: 0 auto;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,16 +14,19 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: calc(85vw + 20px);
+  width: calc(100% + 15px);
 }
 
 .photo-text-container {
   justify-content: flex-start;
+  margin-top: 1000px;
 }
 
 .video-text-container {
   justify-content: flex-end;
 }
+
+.carousel {}
 
 .horizontal-line {
   flex: 1;
@@ -36,4 +42,7 @@
   color: var(--purple-dark);
 }
 
-.video {}
+.video {
+  width: 100%;
+  margin-top: 30px;
+}

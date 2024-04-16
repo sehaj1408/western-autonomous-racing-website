@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+  --accent-color: #edeaff;
+  --purple-light: #9d7dff;
+  --purple-medium: #6043bc;
+  --purple-dark: #480089;
+}
+
+body {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image:
+    repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 100vh),
+    repeating-linear-gradient(#9d7dff6c, #a98ef7a4);
+}
