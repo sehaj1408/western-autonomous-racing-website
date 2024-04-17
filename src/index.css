@@ -19,3 +19,11 @@ body {
     repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 100vh),
     repeating-linear-gradient(#9d7dff6c, #a98ef7a4);
 }
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-image:
+      repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 85vh),
+      repeating-linear-gradient(#9d7dff6c, #a98ef7a4);
+  }
+}

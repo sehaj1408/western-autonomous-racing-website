@@ -44,3 +44,70 @@ header {
   font-weight: 400;
   margin-left: 10px;
 }
+
+@media screen and (max-width: 1200px) {
+  header {
+    justify-content: center;
+  }
+
+  .logo-container {
+    position: fixed;
+    left: 15px;
+  }
+
+  .logo-container .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo-text-container {
+    font-size: 13px;
+    margin-left: 5px;
+    width: 90px;
+  }
+
+  .nav-container {
+    background-color: #a081ff;
+    position: fixed;
+    top: 90px;
+    left: 0px;
+    right: 0px;
+    height: 0;
+    transition: height 0.5s;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 250px;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.5s ease;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    color: var(--accent-color);
+    position: fixed;
+    right: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-open {
+    height: 250px;
+  }
+
+  .menu-open nav {
+    opacity: 1;
+  }
+
+  .menu-open .nav-menu {
+    transform: rotate(90deg);
+  }
+}
