@@ -45,7 +45,11 @@ header {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+.nav-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
   header {
     justify-content: center;
   }

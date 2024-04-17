@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className={`${styles['nav-container']} ${isMenuOpen && styles['menu-open']}`}>
-        <nav>
+        <nav onClick={handleMenuToggle}>
           <NavbarButton name={'Home'} hrefTag={'/'} />
           <NavbarButton name={'Overview'} hrefTag={'/overview'} />
           <NavbarButton name={'Contact'} hrefTag={'/contact'} />

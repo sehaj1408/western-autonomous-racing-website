@@ -9,17 +9,8 @@ const NavbarButton = ({ name, hrefTag }) => {
   const location = useLocation();
 
   useEffect(() => {
-    const savedActiveButton = localStorage.getItem('ACTIVE_NAVBAR_BUTTON');
-    if (savedActiveButton) {
-      const parsedActiveButton = JSON.parse(savedActiveButton);
-      if (parsedActiveButton === name) {
-        setIsActive(true);
-      }
-    }
-  }, [name]);
-
-  useEffect(() => {
     if (location.pathname === hrefTag) {
+      localStorage.setItem('ACTIVE_NAVBAR_BUTTON', JSON.stringify(hrefTag));
       setIsActive(true);
     } else {
       setIsActive(false);
