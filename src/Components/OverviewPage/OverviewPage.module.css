@@ -13,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 150px;
 }
 
 .section-title-text-container {
@@ -23,13 +24,11 @@
 }
 
 .photo-text-container {
-  margin-top: 150px;
   justify-content: flex-start;
 }
 
 .video-text-container {
   justify-content: flex-end;
-  margin-top: 80px;
 }
 
 .carousel {
@@ -42,6 +41,7 @@
   border-bottom: 2px solid white;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.606);
   background-color: var(--purple-light);
+  margin-bottom: 50px;
 }
 
 .horizontal-line {
@@ -76,4 +76,6 @@
   .section-title-text {
     font-size: 25px;
   }
+
+  .carousel {}
 }
