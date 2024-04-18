@@ -24,9 +24,9 @@ const ImageCarousel = () => {
   images = images.map((image, index) => {
     return {
       ...image,
-      originalHeight: "450px",
-      originalWidth: "450px",
-      thumbnailHeight: "70px",
+      originalHeight: "320px",
+      originalWidth: "300px",
+      thumbnailHeight: "60px",
       originalAlt: `image${index + 1}`,
       thumbnailAlt: `image${index + 1}`,
       originalTitle: `Image ${index + 1}`,
@@ -37,7 +37,7 @@ const ImageCarousel = () => {
 
   return (
     <div className={styles['carousel-container']}>
-      <ImageGallery items={images} showFullscreenButton={false} showBullets={true} showIndex={true} slideDuration={700} />;
+      <ImageGallery items={images} showFullscreenButton={false} showBullets={true} showIndex={true} slideDuration={600} />;
     </div>
   )
 }

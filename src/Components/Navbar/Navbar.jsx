@@ -26,12 +26,12 @@ const Navbar = () => {
           <p>Autonomous Racing</p>
         </div>
       </div>
-      <div className={`${styles['nav-container']} ${isMenuOpen && styles['menu-open']}`}>
-        <nav onClick={handleMenuToggle}>
-          <NavbarButton name={'Home'} hrefTag={'/'} />
-          <NavbarButton name={'Overview'} hrefTag={'/overview'} />
-          <NavbarButton name={'Contact'} hrefTag={'/contact'} />
-        </nav>
+      <div className={`${styles['nav-container']} ${isMenuOpen ? styles['menu-open'] : ''}`}>
+        <div className={styles['navbar']}>
+          <NavbarButton name={'Home'} hrefTag={'/'} onMenuChange={handleMenuToggle} />
+          <NavbarButton name={'Overview'} hrefTag={'/overview'} onMenuChange={handleMenuToggle} />
+          <NavbarButton name={'Contact'} hrefTag={'/contact'} onMenuChange={handleMenuToggle} />
+        </div>
       </div>
       <div className={styles['nav-menu']} onClick={handleMenuToggle}>
         {isMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}

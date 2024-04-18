@@ -5,6 +5,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
 }
 
 .home {
@@ -17,7 +18,7 @@
 
 .info-container {
   width: 80vw;
-  max-width: 600px;
+  max-width: 650px;
   margin-right: 150px;
 }
 
@@ -29,7 +30,7 @@
 .title h1 {
   color: var(--purple-dark);
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 70px;
   margin-bottom: 10px;
 }
 
@@ -43,15 +44,39 @@
   width: 460px;
 }
 
+@media screen and (max-width: 1200px) {
+  .info-container {
+    width: 53vw;
+    margin-right: 2vw;
+    margin-left: 10px;
+  }
+
+  .title h1 {
+    font-size: 45px;
+  }
+
+  .summary {
+    font-size: 18px;
+    max-width: 550px;
+  }
+
+  .war-logo {
+    height: 350px;
+    width: 320px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .home {
     flex-direction: column;
-    height: 500px;
+    justify-content: center;
+    width: 80vw;
     margin-top: 100px;
   }
 
   .info-container {
     margin: 0 auto;
+    width: 100%;
   }
 
   .title h1 {
@@ -67,5 +92,6 @@
   .war-logo {
     height: 250px;
     width: 230px;
+    margin-top: 20px;
   }
 }

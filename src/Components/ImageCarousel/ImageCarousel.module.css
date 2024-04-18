@@ -1,5 +1,8 @@
 .carousel-container {
   color: transparent;
   padding-top: 20px;
-  margin-bottom: -10px;
+  width: 80%;
+  background-color: var(--purple-light);
 }
+
+@media screen and (max-width: 768px) {}

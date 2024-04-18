@@ -80,15 +80,14 @@ header {
     transition: height 0.5s;
   }
 
-  nav {
+  .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 250px;
+    height: 100%;
     opacity: 0;
-    transition: height 0.3s ease, opacity 0.5s ease;
+    transition: opacity 0.2s ease-out;
   }
 
   .nav-menu {
@@ -99,7 +98,7 @@ header {
     width: 30px;
     color: var(--accent-color);
     position: fixed;
-    right: 15px;
+    right: 7vw;
     transition: transform 0.3s ease;
   }
 
@@ -107,11 +106,13 @@ header {
     height: 250px;
   }
 
-  .menu-open nav {
+  .menu-open .navbar {
     opacity: 1;
   }
+}
 
-  .menu-open .nav-menu {
-    transform: rotate(90deg);
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 0 5vw;
   }
 }

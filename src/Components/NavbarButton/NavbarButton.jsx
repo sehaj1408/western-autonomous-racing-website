@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import styles from "./NavbarButton.module.css";
 
-const NavbarButton = ({ name, hrefTag }) => {
+const NavbarButton = ({ name, hrefTag, onMenuChange }) => {
   const [isActive, setIsActive] = useState(false);
   const location = useLocation();
 
@@ -18,7 +18,7 @@ const NavbarButton = ({ name, hrefTag }) => {
   }, [location.pathname, hrefTag]);
 
   return (
-    <Link to={hrefTag} className={isActive ? styles['active'] : ''}>{name}</Link>
+    <Link to={hrefTag} className={isActive ? styles['active'] : ''} onClick={onMenuChange}>{name}</Link>
   )
 }
 

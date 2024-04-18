@@ -7,7 +7,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  min-height: 50px;
   width: 120px;
   margin-left: 10px;
 }
@@ -22,7 +22,12 @@ a:hover,
 
 @media screen and (max-width: 768px) {
   a {
-    margin: 0 auto;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  a {
+    margin-left: 0.5vw;
   }
 }
