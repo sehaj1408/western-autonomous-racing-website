@@ -70,7 +70,7 @@
 
 @media screen and (max-width: 1200px) {
   .contact-text-and-info-container {
-    margin-right: 2vw;
+    margin-right: 6vw;
     width: 370px;
   }
 
@@ -104,8 +104,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .contact-container {}
-
   .contact {
     flex-direction: column;
     position: fixed;
