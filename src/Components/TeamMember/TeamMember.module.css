@@ -1,0 +1,51 @@
+.member-container {
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+.member-profile {
+  height: 130px;
+  width: 130px;
+  border-radius: 100%;
+}
+
+.member-name {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.member-title {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.linkedin-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purple-light);
+  border: none;
+  border-radius: 50px;
+  height: 35px;
+  width: 100px;
+}
+
+.linkedin-button:hover {
+  cursor: pointer;
+}
+
+.linkedin-button p {
+  font-size: 12px;
+  color: white;
+  margin-right: 5px;
+}
+
+.linkedin-button img {
+  height: 20px;
+  width: 20px;
+}

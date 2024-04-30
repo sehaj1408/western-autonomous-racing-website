@@ -2,6 +2,7 @@ import styles from "./OverviewPage.module.css";
 import React, { Component } from 'react';
 import YoutubeEmbed from "../YoutubeEmbed/YoutubeEmbed";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import TeamMember from "../TeamMember/TeamMember";
 
 const OverviewPage = () => {
   return (
@@ -22,6 +23,14 @@ const OverviewPage = () => {
         </div>
         <div className={styles['carousel']}>
           <ImageCarousel />
+        </div>
+        <div className={`${styles['section-title-text-container']} ${styles['team-text-container']}`}>
+          <div className={styles['horizontal-line']}></div>
+          <div className={styles['section-title-text']}>Team</div>
+          <div className={styles['horizontal-line']}></div>
+        </div>
+        <div className={styles['team']}>
+          <TeamMember />
         </div>
       </div>
     </div >
