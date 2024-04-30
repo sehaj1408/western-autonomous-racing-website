@@ -3,6 +3,7 @@
   padding-top: 20px;
   width: 80%;
   background-color: var(--purple-light);
+  max-width: 1500px;
 }
 
 @media screen and (max-width: 768px) {}

@@ -1,15 +1,21 @@
 import styles from "./TeamMember.module.css";
 
-const TeamMember = () => {
+const TeamMember = ({ name, position, linkedInUsername }) => {
+  const goToLinkedInPage = (linkedInUsername) => {
+    window.open(`https://www.linkedin.com/in/${linkedInUsername}/`, '_blank');
+  }
+
   return (
     <div className={styles['member-container']}>
       <img src={require('../../Images/Sehaj-Naangal.jpeg')} alt="Right Arrow White" className={styles['member-profile']} />
-      <p className={styles['member-name']}>Person 1</p>
-      <p className={styles['member-title']}>Position Title</p>
-      <button className={styles['linkedin-button']}>
-        <p>LinkedIn</p>
-        <img src={require('../../Images/right-arrow-white.png')} alt="Right Arrow White" />
-      </button>
+      <div className={styles['details-container']}>
+        <p className={styles['member-name']}>{name}</p>
+        <p className={styles['member-title']}>{position}</p>
+        <button className={styles['linkedin-button']} onClick={() => goToLinkedInPage(linkedInUsername)}>
+          <p>LinkedIn</p>
+          <img src={require('../../Images/right-arrow-white.png')} alt="Right Arrow White" />
+        </button>
+      </div>
     </div>
   )
 }

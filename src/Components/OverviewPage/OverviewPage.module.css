@@ -8,7 +8,7 @@
 
 .overview-container-2 {
   width: 80vw;
-  max-width: 2000px;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,6 +69,12 @@
   margin-bottom: 100px;
 }
 
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px 80px;
+}
+
 @media screen and (max-width: 768px) {
   .photo-text-container {
     justify-content: center;
@@ -78,7 +84,23 @@
     justify-content: center;
   }
 
+  .team-text-container {
+    justify-content: center;
+  }
+
   .section-title-text {
     font-size: 25px;
+  }
+
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .team-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

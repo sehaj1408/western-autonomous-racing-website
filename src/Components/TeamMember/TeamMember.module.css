@@ -5,22 +5,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: lightblue;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+  margin-top: 5px;
 }
 
 .member-profile {
   height: 130px;
   width: 130px;
   border-radius: 100%;
+  border: 2px solid var(--purple-light);
 }
 
 .member-name {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  color: var(--purple-dark);
 }
 
 .member-title {
   font-weight: 300;
+  font-size: 17px;
+  color: var(--purple-dark);
   font-style: italic;
 }
 
@@ -31,8 +44,9 @@
   background-color: var(--purple-light);
   border: none;
   border-radius: 50px;
-  height: 35px;
+  height: 30px;
   width: 100px;
+  margin-top: 2px;
 }
 
 .linkedin-button:hover {
@@ -48,4 +62,36 @@
 .linkedin-button img {
   height: 20px;
   width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .member-container {
+    margin: -50px -30px;
+  }
+
+  .member-profile {
+    height: 80px;
+    width: 80px;
+  }
+
+  .member-name {
+    font-size: 14px;
+  }
+
+  .member-title {
+    font-size: 13px;
+  }
+
+  .linkedin-button {
+    width: 80px;
+  }
+
+  .linkedin-button p {
+    font-size: 10px;
+  }
+
+  .linkedin-button img {
+    height: 15px;
+    width: 15px;
+  }
 }

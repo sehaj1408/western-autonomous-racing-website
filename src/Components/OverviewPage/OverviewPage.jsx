@@ -29,8 +29,14 @@ const OverviewPage = () => {
           <div className={styles['section-title-text']}>Team</div>
           <div className={styles['horizontal-line']}></div>
         </div>
-        <div className={styles['team']}>
-          <TeamMember />
+        <div className={styles['team-container']}>
+          <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
+          <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
+          <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
+          <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
+          <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
+          <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
+          <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
         </div>
       </div>
     </div >
