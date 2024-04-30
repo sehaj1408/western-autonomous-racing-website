@@ -3,7 +3,10 @@
   padding-top: 20px;
   width: 80%;
   background-color: var(--purple-light);
-  max-width: 1500px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.606);
+  max-width: 1300px;
 }
 
 @media screen and (max-width: 768px) {}
