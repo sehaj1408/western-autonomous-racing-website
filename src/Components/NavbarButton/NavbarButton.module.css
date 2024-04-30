@@ -10,14 +10,17 @@ a {
   min-height: 50px;
   width: 120px;
   margin-left: 10px;
+  transition: transform 0.3s ease;
 }
 
-a:hover,
 .active {
-  transition: background-color 0.5s ease;
   background-color: #d0cae8;
   color: var(--purple-dark);
   border-radius: 30px;
+}
+
+a:hover {
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 768px) {

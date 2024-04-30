@@ -11,8 +11,12 @@ const HomePage = () => {
             <h1 className={styles['title-autonomous-racing-text']}>Autonomous Racing</h1>
           </div>
           <p className={styles['summary']}>
-            Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Western Autonomous Racing, a pioneering team, addresses the pressing issue of road safety by developing
+            an innovative and cost-effective autonomous system. Our approach combines a stereo camera and an inertial
+            measurement unit sensor suite, offering a promising alternative to expensive LiDAR sensors. By integrating
+            data from these sensors into mapping and localization algorithms, we've achieved initial success with a
+            proof-of-concept RC car. Our investigation focuses on enhancing sensor capabilities through additional
+            cameras, wider field of view, and robust algorithm development. Click Overview to learn more about our project.
           </p>
         </div>
         <img src={require("../../Images/WAR-logo.png")} alt="WAR Logo" className={styles['war-logo']} />

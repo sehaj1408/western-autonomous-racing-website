@@ -1,12 +1,15 @@
 .carousel-container {
   color: transparent;
-  padding-top: 20px;
   width: 80%;
-  background-color: var(--purple-light);
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.606);
   max-width: 1300px;
+  /* border: 1px solid var(--purple-medium);
+  border-left: 1.5px solid var(--purple-medium);
+  border-right: 1.5px solid var(--purple-medium); */
+  border-radius: 30px;
+  background-color: #c3b1fc;
+  background-color: var(--purple-light);
+  padding-top: 30px;
+  box-shadow: 0px 5px 10px var(--purple-medium);
 }
 
 @media screen and (max-width: 768px) {}
