@@ -31,13 +31,13 @@ const OverviewPage = () => {
         </div>
         <div className={styles['team-outer-container']}>
           <div className={styles['team-container']}>
-            <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
-            <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
-            <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
-            <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
-            <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
-            <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
-            <TeamMember name={'Sehaj Naangal'} position={'Front-End Developer'} linkedInUsername={'sehajnaangal'} />
+            <TeamMember name={'Alexander Van Hoeve'} position={'NA'} linkedInUsername={'alexander-van-hoeve'} imagePath={'Alexander-Van-Hoeve.png'} />
+            <TeamMember name={'Daniel Xie'} position={'NA'} linkedInUsername={'daniel-xie-2001'} imagePath={'Daniel-Xie.png'} />
+            <TeamMember name={'Lucas Hartman'} position={'NA'} linkedInUsername={'lucashartman2021'} imagePath={'Lucas-Hartman.png'} />
+            <TeamMember name={'Michael Wong'} position={'NA'} linkedInUsername={'wongm3079'} imagePath={'Michael-Wong.png'} />
+            <TeamMember name={'Piotr Nowak'} position={'NA'} linkedInUsername={'pnowak5'} imagePath={'Piotr-Nowak.png'} />
+            <TeamMember name={'Rishit Mehley'} position={'NA'} linkedInUsername={'rishit-mehley-667600198'} imagePath={'Rishit-Mehley.png'} />
+            <TeamMember name={'Sehaj Naangal'} position={'NA'} linkedInUsername={'sehajnaangal'} imagePath={'Sehaj-Naangal.png'} />
           </div>
         </div>
       </div>
