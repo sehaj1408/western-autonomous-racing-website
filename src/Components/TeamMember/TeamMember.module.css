@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 85px;
+  height: 90px;
   margin-top: 5px;
 }
 
@@ -39,36 +39,41 @@
   font-style: italic;
 }
 
-.linkedin-button {
+.info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-container button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--purple-light);
   border: none;
-  border-radius: 50px;
-  height: 30px;
-  width: 100px;
-  margin-top: 2px;
-  transition: background-color 0.3s ease;
+  background-color: transparent;
+  margin: 0 3px;
 }
 
-.linkedin-button:hover {
+.info-container button:hover {
   cursor: pointer;
-  background-color: var(--purple-medium);
 }
 
-.linkedin-button p {
-  font-size: 12px;
-  color: white;
-  margin-right: 5px;
+.info-container button img {
+  height: 30px;
+  width: 30px;
 }
 
-.linkedin-button img {
-  height: 20px;
-  width: 20px;
+.github-icon-image {
+  max-height: 29px;
+  max-width: 29px;
 }
 
 @media screen and (max-width: 768px) {
+  .details-container {
+    height: 75px;
+  }
+
   .member-container {
     margin: -50px -30px;
     width: 40vw;
@@ -87,16 +92,13 @@
     font-size: 13px;
   }
 
-  .linkedin-button {
-    width: 80px;
+  .info-container button img {
+    height: 25px;
+    width: 25px;
   }
 
-  .linkedin-button p {
-    font-size: 10px;
-  }
-
-  .linkedin-button img {
-    height: 15px;
-    width: 15px;
+  .github-icon-image {
+    max-height: 24px;
+    max-width: 24px;
   }
 }

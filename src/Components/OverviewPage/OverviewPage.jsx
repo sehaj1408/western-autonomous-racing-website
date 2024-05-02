@@ -31,13 +31,21 @@ const OverviewPage = () => {
         </div>
         <div className={styles['team-outer-container']}>
           <div className={styles['team-container']}>
-            <TeamMember name={'Alexander Van Hoeve'} position={'NA'} linkedInUsername={'alexander-van-hoeve'} imagePath={'Alexander-Van-Hoeve.png'} />
-            <TeamMember name={'Daniel Xie'} position={'NA'} linkedInUsername={'daniel-xie-2001'} imagePath={'Daniel-Xie.png'} />
-            <TeamMember name={'Lucas Hartman'} position={'NA'} linkedInUsername={'lucashartman2021'} imagePath={'Lucas-Hartman.png'} />
-            <TeamMember name={'Michael Wong'} position={'NA'} linkedInUsername={'wongm3079'} imagePath={'Michael-Wong.png'} />
-            <TeamMember name={'Piotr Nowak'} position={'NA'} linkedInUsername={'pnowak5'} imagePath={'Piotr-Nowak.png'} />
-            <TeamMember name={'Rishit Mehley'} position={'NA'} linkedInUsername={'rishit-mehley-667600198'} imagePath={'Rishit-Mehley.png'} />
-            <TeamMember name={'Sehaj Naangal'} position={'NA'} linkedInUsername={'sehajnaangal'} imagePath={'Sehaj-Naangal.png'} />
+            <TeamMember imagePath={'Daniel-Xie.png'} name={'Daniel Xie'} position={'Software Developer'} websiteLink={'https://danielxie.me/'}
+              githubLink={'https://github.com/d4n13lx13'} linkedinLink={'https://www.linkedin.com/in/daniel-xie-2001/'}
+            />
+            <TeamMember imagePath={'Michael-Wong.png'} name={'Michael Wong'} position={'Software Developer'} websiteLink={'https://michaelewong.ca/'}
+              githubLink={'https://github.com/wongm3079'} linkedinLink={'https://www.linkedin.com/in/wongm3079/'}
+            />
+            <TeamMember imagePath={'Sehaj-Naangal.png'} name={'Sehaj Naangal'} position={'Software Developer'} websiteLink={'https://sehajnaangal.vercel.app/'}
+              githubLink={'https://github.com/sehaj1408'} linkedinLink={'https://www.linkedin.com/in/sehajnaangal/'}
+            />
+            <TeamMember imagePath={'Alexander-Van-Hoeve.png'} name={'Alexander Van Hoeve'} position={'Hardware Engineer'}
+              githubLink={'https://github.com/avanhoev'} linkedinLink={'https://www.linkedin.com/in/alexander-van-hoeve/'}
+            />
+            <TeamMember imagePath={'Piotr-Nowak.png'} name={'Piotr Nowak'} position={'Hardware Engineer'}
+              githubLink={'https://github.com/UMER1S'} linkedinLink={'https://www.linkedin.com/in/pnowak5/'}
+            />
           </div>
         </div>
       </div>

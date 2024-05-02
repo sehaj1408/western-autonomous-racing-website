@@ -7,7 +7,7 @@ const ContactPage = () => {
   }
 
   const openMail = () => {
-    const email = 'example@example.com';
+    const email = 'danxie2001@gmail.com';
     const mailLink = `mailto:${email}`;
     window.location.href = mailLink;
   }
