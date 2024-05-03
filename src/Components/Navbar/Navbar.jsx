@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import NavbarButton from "../NavbarButton/NavbarButton";
@@ -14,6 +14,21 @@ const Navbar = () => {
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   }
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      const navbar = document.querySelector('.navbar');
+      if (navbar && !navbar.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
 
   return (
     <header>
