@@ -6,6 +6,7 @@ import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  handleWindowWidthChange();
 
   const handleLogoClick = () => {
     window.location.href = '/';
