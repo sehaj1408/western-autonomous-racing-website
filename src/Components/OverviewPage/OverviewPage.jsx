@@ -37,14 +37,14 @@ const OverviewPage = () => {
             <TeamMember imagePath={'Michael-Wong.png'} name={'Michael Wong'} position={'Software Developer'} websiteLink={'https://michaelewong.ca/'}
               githubLink={'https://github.com/wongm3079'} linkedinLink={'https://www.linkedin.com/in/wongm3079/'}
             />
-            <TeamMember imagePath={'Sehaj-Naangal.png'} name={'Sehaj Naangal'} position={'Software Developer'} websiteLink={'https://sehajnaangal.vercel.app/'}
-              githubLink={'https://github.com/sehaj1408'} linkedinLink={'https://www.linkedin.com/in/sehajnaangal/'}
-            />
             <TeamMember imagePath={'Alexander-Van-Hoeve.png'} name={'Alexander Van Hoeve'} position={'Hardware Engineer'}
               githubLink={'https://github.com/avanhoev'} linkedinLink={'https://www.linkedin.com/in/alexander-van-hoeve/'}
             />
             <TeamMember imagePath={'Piotr-Nowak.png'} name={'Piotr Nowak'} position={'Hardware Engineer'}
               githubLink={'https://github.com/UMER1S'} linkedinLink={'https://www.linkedin.com/in/pnowak5/'}
+            />
+            <TeamMember imagePath={'Sehaj-Naangal.png'} name={'Sehaj Naangal'} position={'Software Developer'} websiteLink={'https://sehajnaangal.vercel.app/'}
+              githubLink={'https://github.com/sehaj1408'} linkedinLink={'https://www.linkedin.com/in/sehajnaangal/'}
             />
           </div>
         </div>

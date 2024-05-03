@@ -22,7 +22,7 @@ const ContactPage = () => {
               <h2 className={styles['contact-name']}>Western Autonomous Racing</h2>
               <div className={styles['contact-buttons-container']}>
                 <button>
-                  <img src={require('../../Images/Github-Icon.png')} alt="Github Icon" onClick={() => goToWebsite('https://github.com/sehaj1408/western-autonomous-racing-website')} />
+                  <img src={require('../../Images/Github-Icon.png')} alt="Github Icon" onClick={() => goToWebsite('https://github.com/Western-Autonomous-Racing')} />
                 </button>
                 <button>
                   <img src={require('../../Images/Mail-Icon.png')} alt="Mail Icon" onClick={openMail} />
