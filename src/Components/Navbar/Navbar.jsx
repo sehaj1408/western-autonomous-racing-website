@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import NavbarButton from "../NavbarButton/NavbarButton";
@@ -13,22 +13,16 @@ const Navbar = () => {
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
+    handleWindowWidthChange();
   }
 
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      const navbar = document.querySelector('.navbar');
-      if (navbar && !navbar.contains(event.target)) {
-        setIsMenuOpen(false);
-      }
-    };
+  const handleWindowWidthChange = () => {
+    if (window.innerWidth > 768) {
+      setIsMenuOpen(true);
+    }
+  }
 
-    document.addEventListener('click', handleOutsideClick);
-
-    return () => {
-      document.removeEventListener('click', handleOutsideClick);
-    };
-  }, []);
+  window.addEventListener('resize', handleWindowWidthChange)
 
   return (
     <header>
@@ -42,11 +36,13 @@ const Navbar = () => {
         </div>
       </div>
       <div className={`${styles['nav-container']} ${isMenuOpen ? styles['menu-open'] : ''}`}>
-        <div className={styles['navbar']}>
-          <NavbarButton name={'Home'} hrefTag={'/'} onMenuChange={handleMenuToggle} />
-          <NavbarButton name={'Overview'} hrefTag={'/overview'} onMenuChange={handleMenuToggle} />
-          <NavbarButton name={'Contact'} hrefTag={'/contact'} onMenuChange={handleMenuToggle} />
-        </div>
+        {isMenuOpen && (
+          <div className={styles['navbar']}>
+            <NavbarButton name={'Home'} hrefTag={'/'} onMenuChange={handleMenuToggle} />
+            <NavbarButton name={'Overview'} hrefTag={'/overview'} onMenuChange={handleMenuToggle} />
+            <NavbarButton name={'Contact'} hrefTag={'/contact'} onMenuChange={handleMenuToggle} />
+          </div>
+        )}
       </div>
       <div className={styles['nav-menu']} onClick={handleMenuToggle}>
         {isMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
