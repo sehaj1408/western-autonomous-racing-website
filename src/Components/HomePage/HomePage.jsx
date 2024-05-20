@@ -21,7 +21,8 @@ const HomePage = () => {
             data from these sensors into mapping and localization algorithms, we've achieved initial success with a
             proof-of-concept RC car. Our investigation focuses on enhancing sensor capabilities through additional
             cameras, wider field of view, and robust algorithm development.
-            Click <span className={styles['overview-text-button']} onClick={handleOverviewClick}>Overview</span> to learn more about our project.
+            Click <span className={styles['overview-text-button']} onClick={handleOverviewClick}>Overview</span>
+            to learn more about our project.
           </p>
         </div>
         <img src={require("../../Images/WAR-logo.png")} alt="WAR Logo" className={styles['war-logo']} />
